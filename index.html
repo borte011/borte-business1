@@ -40,15 +40,24 @@
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-media" aria-hidden="true">
-        <img
-          src="hero.jpg"
-          alt=""
-          width="2000"
-          height="1333"
-        />
+      <div class="hero-slider" aria-hidden="true">
+        <div class="hero-slides">
+          <div class="hero-slide is-active">
+            <img src="hero.jpg" alt="" width="2000" height="1333" />
+          </div>
+          <div class="hero-slide">
+            <img src="hero-2.jpg" alt="" width="2000" height="1333" />
+          </div>
+          <div class="hero-slide">
+            <img src="hero-3.jpg" alt="" width="2000" height="1333" />
+          </div>
+          <div class="hero-slide">
+            <img src="hero-4.jpg" alt="" width="2000" height="1333" />
+          </div>
+        </div>
         <div class="hero-shade"></div>
       </div>
+
       <div class="hero-content">
         <p class="brand-mark">BORTE</p>
         <h1 data-i18n="hero.title">Shopping sahlan, qiimo wanaagsan</h1>
@@ -57,6 +66,12 @@
           <a class="btn" href="#shops" data-i18n="hero.cta">Eeg dukaamada</a>
           <a class="btn btn-ghost" href="#contact" data-i18n="hero.secondary">Nala soo xiriir</a>
         </div>
+      </div>
+
+      <div class="hero-controls">
+        <button type="button" class="hero-arrow hero-prev" id="heroPrev" aria-label="Sawirka hore">&#8249;</button>
+        <div class="hero-dots" id="heroDots" role="tablist" aria-label="Hero slides"></div>
+        <button type="button" class="hero-arrow hero-next" id="heroNext" aria-label="Sawirka xiga">&#8250;</button>
       </div>
     </section>
 
