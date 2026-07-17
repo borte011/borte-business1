@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BORTE - Shopping</title>
+  <meta name="description" content="BORTE - dukaamo kala duwan, alaab tayo leh, iyo qiimo wanaagsan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <img class="corner-logo" src="borte-logo.png" alt="BORTE Business Center logo" />
+
+  <header class="site-header">
+    <a class="logo" href="#home">
+      <img src="borte-logo.png" alt="BORTE Business Center" />
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#home" data-i18n="nav.home">Guriga</a>
+      <a href="#shops" data-i18n="nav.shops">Dukaamada</a>
+      <a href="#about" data-i18n="nav.about">Nagu saabsan</a>
+      <a href="#contact" data-i18n="nav.contact">Nala soo xiriir</a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+      <a class="btn btn-sm" href="https://wa.me/252615795868" target="_blank" rel="noopener" data-i18n="nav.cta">WhatsApp</a>
+    </div>
+    <button type="button" class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="#home" data-i18n="nav.home">Guriga</a>
+    <a href="#shops" data-i18n="nav.shops">Dukaamada</a>
+    <a href="#about" data-i18n="nav.about">Nagu saabsan</a>
+    <a href="#contact" data-i18n="nav.contact">Nala soo xiriir</a>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=2000&q=80"
+          alt=""
+          width="2000"
+          height="1333"
+        />
+        <div class="hero-shade"></div>
+      </div>
+      <div class="hero-content">
+        <p class="brand-mark">BORTE</p>
+        <h1 data-i18n="hero.title">Shopping sahlan, qiimo wanaagsan</h1>
+        <p class="hero-lead" data-i18n="hero.lead">Ku soo dhowow BORTE - dukaamo kala duwan, alaab tayo leh, iyo qiimo ku raali geliya.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#shops" data-i18n="hero.cta">Eeg dukaamada</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.secondary">Nala soo xiriir</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shops" id="shops">
+      <div class="section-inner">
+        <div class="shops-intro">
+          <p class="eyebrow" data-i18n="shops.eyebrow">Dukaamada</p>
+          <h2 data-i18n="shops.title">Shopino tijaabo ah</h2>
+          <p class="section-text" data-i18n="shops.lead">Dooro dukaanka aad rabto oo arag alaabta iyo qiimaha.</p>
+        </div>
+
+        <div class="shop-grid">
+          <article class="shop-card">
+            <div class="shop-card-image">
+              <img
+                src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=800&q=80"
+                alt="Borte Fashion"
+                width="800"
+                height="500"
+              />
+            </div>
+            <div class="shop-card-body">
+              <div class="shop-card-head">
+                <h3 data-i18n="shop1.name">Borte Fashion</h3>
+                <span data-i18n="shop1.tag">Dharka &amp; kabaha</span>
+              </div>
+              <ul class="product-list">
+                <li><span data-i18n="shop1.p1">Shirt</span><strong>$18</strong></li>
+                <li><span data-i18n="shop1.p2">Kabaha</span><strong>$35</strong></li>
+                <li><span data-i18n="shop1.p3">Boorsada</span><strong>$22</strong></li>
+              </ul>
+              <a class="btn btn-shop" href="https://wa.me/252615795868?text=BORTE%20Fashion%20order" target="_blank" rel="noopener" data-i18n="shop.order">Dalbo WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="shop-card">
+            <div class="shop-card-image">
+              <img
+                src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=800&q=80"
+                alt="Borte Electronics"
+                width="800"
+                height="500"
+              />
+            </div>
+            <div class="shop-card-body">
+              <div class="shop-card-head">
+                <h3 data-i18n="shop2.name">Borte Electronics</h3>
+                <span data-i18n="shop2.tag">Elektaroonig</span>
+              </div>
+              <ul class="product-list">
+                <li><span data-i18n="shop2.p1">Phone case</span><strong>$8</strong></li>
+                <li><span data-i18n="shop2.p2">Earphones</span><strong>$12</strong></li>
+                <li><span data-i18n="shop2.p3">Charger</span><strong>$6</strong></li>
+              </ul>
+              <a class="btn btn-shop" href="https://wa.me/252615795868?text=BORTE%20Electronics%20order" target="_blank" rel="noopener" data-i18n="shop.order">Dalbo WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="shop-card">
+            <div class="shop-card-image">
+              <img
+                src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80"
+                alt="Borte Food Market"
+                width="800"
+                height="500"
+              />
+            </div>
+            <div class="shop-card-body">
+              <div class="shop-card-head">
+                <h3 data-i18n="shop3.name">Borte Food Market</h3>
+                <span data-i18n="shop3.tag">Cunto &amp; raashin</span>
+              </div>
+              <ul class="product-list">
+                <li><span data-i18n="shop3.p1">Bariis 25kg</span><strong>$20</strong></li>
+                <li><span data-i18n="shop3.p2">Saliid</span><strong>$5</strong></li>
+                <li><span data-i18n="shop3.p3">Sonkor</span><strong>$4</strong></li>
+              </ul>
+              <a class="btn btn-shop" href="https://wa.me/252615795868?text=BORTE%20Food%20Market%20order" target="_blank" rel="noopener" data-i18n="shop.order">Dalbo WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="shop-card">
+            <div class="shop-card-image">
+              <img
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+                alt="Borte Home Store"
+                width="800"
+                height="500"
+              />
+            </div>
+            <div class="shop-card-body">
+              <div class="shop-card-head">
+                <h3 data-i18n="shop4.name">Borte Home Store</h3>
+                <span data-i18n="shop4.tag">Guriga alaabta</span>
+              </div>
+              <ul class="product-list">
+                <li><span data-i18n="shop4.p1">Bustee</span><strong>$15</strong></li>
+                <li><span data-i18n="shop4.p2">Koob set</span><strong>$10</strong></li>
+                <li><span data-i18n="shop4.p3">Laambad</span><strong>$14</strong></li>
+              </ul>
+              <a class="btn btn-shop" href="https://wa.me/252615795868?text=BORTE%20Home%20Store%20order" target="_blank" rel="noopener" data-i18n="shop.order">Dalbo WhatsApp</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-inner about-layout">
+        <figure class="about-photo">
+          <img src="abdikariin-ali.jpg" alt="Abdikariin Ali" width="800" height="1000" />
+        </figure>
+        <div class="about-copy">
+          <p class="eyebrow" data-i18n="about.eyebrow">Nagu saabsan</p>
+          <h2 data-i18n="about.title">BORTE waa shopping kalsooni leh</h2>
+          <p class="section-text" data-i18n="about.text">
+            BORTE waa platform shopping oo kuu ogolaanaysa inaad ka iibsato dukaamo kala duwan. Waxaan bixinaa alaab wanaagsan, qiimo macquul ah, iyo adeeg degdeg ah.
+          </p>
+          <p class="about-name">BORTE</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-inner contact-grid">
+        <div>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Nala soo xiriir</p>
+          <h2 data-i18n="contact.title">Bilow shopping-kaaga maanta</h2>
+          <p class="section-text" data-i18n="contact.text">Nala soo xiriir WhatsApp, telefoon, ama email - waxaan kuu jawaabi doonaa si degdeg ah.</p>
+        </div>
+        <div class="contact-links">
+          <a href="tel:+252615795868">
+            <span data-i18n="contact.phone">Telefoon</span>
+            <strong>+252 61 579 5868</strong>
+          </a>
+          <a href="https://wa.me/252615795868" target="_blank" rel="noopener">
+            <span>WhatsApp</span>
+            <strong>+252 61 579 5868</strong>
+          </a>
+          <a href="mailto:borte011@gmail.com">
+            <span>Email</span>
+            <strong>borte011@gmail.com</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> BORTE</p>
+    <p data-i18n="footer.note">Shopping | Qiimo | Kalsooni</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

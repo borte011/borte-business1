@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" role="img" aria-label="BORTE">
+  <rect x="2" y="6" width="36" height="36" rx="10" fill="#c9893a"/>
+  <path d="M12 18h16v2H12zm0 6h16v2H12zm0 6h10v2H12z" fill="#102820"/>
+  <text x="48" y="32" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#102820" letter-spacing="2">BORTE</text>
+</svg>
